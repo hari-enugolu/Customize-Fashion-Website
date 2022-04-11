@@ -1,0 +1,38 @@
+* {
+   margin-top: 0;
+}
+
+
+.header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(164, 227, 102);
+    position: sticky;
+    top: 0;
+    justify-content: space-evenly;
+    z-index: 100;
+    list-style: none;
+  }
+  
+  .header_logo {
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 40px;
+    margin-bottom: 90px;
+   
+  }
+  
+  .header_optionLineOne {
+    font-size: 15px;
+  }
+  
+  .header_option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(18, 17, 17) !important;
+  }
+  
