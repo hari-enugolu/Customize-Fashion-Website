@@ -6,10 +6,10 @@ export default function Filterbar() {
   return (
     <div>
       <h2>
-        <Link to="shoespage">
+        <Link to="Shoes" style={{ textDecoration: "none" }}>
           <span className="shoe">Shoes</span>
         </Link>
-        <Link to="bagspage">
+        <Link to="Bags" style={{ textDecoration: "none" }}>
           <span className="Bag">Bags</span>
         </Link>
       </h2>

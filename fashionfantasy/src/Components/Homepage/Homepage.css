@@ -16,11 +16,13 @@
     width: 250px;
     height: 350px;
     left: 30px;
+    margin-left: 35px;
     margin-top: 2px;
     margin-bottom: 10px;
     background: #232323;
     border-radius: 20px;
     overflow: hidden;
+    float: left;
 }
 
 .container .card::before {
@@ -166,7 +168,7 @@
     background: #e91e63;
 }
 
-.container .card .contentBx  a {
+.container .card .contentBx  button {
     display: inline-block;
     padding: 10px 20px;
     background: #fff;
@@ -180,7 +182,7 @@
 }
 
 
-.container .card:hover .contentBx  a {
+.container .card:hover .contentBx  button {
     opacity: 1;
     transform: translateY(0px);
     transition: 0.75s;

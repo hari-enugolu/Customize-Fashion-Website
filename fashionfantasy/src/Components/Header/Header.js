@@ -22,7 +22,7 @@ export default function Header() {
         {/* <SearchIcon className="header_searchIcon" /> */}
       </div>
 
-      <Link to="cart" style={{ textDecoration: "none" }}>
+      <Link to="Cart" style={{ textDecoration: "none" }}>
         <div className="header_option">
           <span className="header_optionLineOne">Cart </span>
         </div>
