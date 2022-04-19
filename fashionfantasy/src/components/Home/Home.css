@@ -1,0 +1,13 @@
+.container-fluid {
+    margin-left: 100px;   
+}
+.col-md-10{
+    margin-left: 80px;
+}
+.row{
+    align-content: space-between;
+}
+.men{
+    padding: auto;
+    margin: 10px;
+}
