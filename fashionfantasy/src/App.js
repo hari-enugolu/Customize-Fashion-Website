@@ -6,6 +6,7 @@ import Filterbar from "./Components/Homepage/Filterbar";
 import Shoespage from "./Components/Shoespage/Shoespage";
 import Bagspage from "./Components/Bagspage/Bagspage";
 import Cart from "./Components/Cart/Cart";
+import Payment from "./Components/Payment/Payment";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/Shoes" element={[<Shoespage />]}></Route>
           <Route path="/Bags" element={[<Bagspage />]}></Route>
           <Route path="/Cart" element={[<Cart />]}></Route>
+          <Route path="/Wishlist" element={[<Payment />]}></Route>
         </Routes>
       </div>
     </BrowserRouter>
