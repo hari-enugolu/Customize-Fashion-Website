@@ -61,11 +61,11 @@ function Register() {
             <Title> REGISTER </Title>
             <From>
                 <Input placeholder="Name" />
-                <Input placeholder="Lastname" />
-                <Input placeholder="Username" />
+                <Input placeholder="LastName" />
+                <Input placeholder="UserName" />
                 <Input placeholder="Email" />
                 <Input placeholder="Passward" />
-                <Input placeholder="Confirm passward" />
+                <Input placeholder="Confirm Passward" />
                 <div>
 
                 <label Htmlfile="Role"/>
@@ -76,14 +76,7 @@ function Register() {
    
     </div>
 
-    <div>
-
-    <input type="radio" id="forUser" name="user" onclick="myFunction()" />
-                <label for="forArtist">Artist </label>
-      
-      
-    </div>
-
+    
     <div>
 
     <input type="radio" id="forUser" name="user" onclick="myFunction()" />
@@ -95,7 +88,7 @@ function Register() {
                 <Agreement>
                     By creating an account ,I consent to the processing of my personal data in accordance with the <b>privacy policy</b>
                 </Agreement>
-                <Button> NEXT </Button>
+                <Button> REGISTER </Button>
             </From>
         </Wrapper>
     </Container>
