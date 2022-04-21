@@ -33,7 +33,7 @@ function App() {
         setLoading(true); //loading is true then only ceates
         const result = await axios.post("/create-order", {
           //creating order which passes amount to api coming from frontend
-          amount: orderAmount + "00",
+          amount: orderAmount,
         });
         const { amount, id: order_id, currency } = result.data;
         const {
@@ -96,26 +96,6 @@ function App() {
           <div>
             <div id="form-view" className="donate-heading">
               <form className="form">
-                <div>
-                  <div className="form">Email</div>
-                  <input
-                    type="email"
-                    placeholder="email"
-                    required="true"
-                  ></input>
-                </div>
-                <div className="form">Username</div>
-                <input
-                  type="text"
-                  placeholder="user_name"
-                  required="true"
-                ></input>
-
-                <div className="form">
-                  Phone
-                  <span>(optional)</span>
-                </div>
-                <input type="number" placeholder="number"></input>
                 <div className="form">Amount</div>
                 <div>
                   <input
@@ -132,7 +112,7 @@ function App() {
                 disabled={loading}
                 onClick={loadRazorpay}
               >
-                Donate
+                Pay
               </button>
               {loading && <div>Loading...</div>}
             </div>

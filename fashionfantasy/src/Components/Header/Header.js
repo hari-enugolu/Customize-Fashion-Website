@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 // import SearchIcon from "@mui/icons-material/Search";
 import { Link } from "react-router-dom";
-export default function Header() {
+export default function Header(props) {
   return (
     <div className="header">
       <Link to="/" style={{ textDecoration: "none" }}>
@@ -24,7 +24,14 @@ export default function Header() {
 
       <Link to="Cart" style={{ textDecoration: "none" }}>
         <div className="header_option">
-          <span className="header_optionLineOne">Cart </span>
+          <span className="header_optionLineOne">
+            Cart{" "}
+            {props.countCartItems ? (
+              <button className="badge">{props.countCartItems}</button>
+            ) : (
+              ""
+            )}{" "}
+          </span>
         </div>
       </Link>
 
