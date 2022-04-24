@@ -6,14 +6,13 @@ export default function Filterbar() {
   return (
     <div>
       <h2>
-        <Link to="Shoes" style={{ textDecoration: "none" }}>
+        <Link to="HomeShoes" style={{ textDecoration: "none" }}>
           <span className="shoe">Shoes</span>
         </Link>
-        <Link to="Bags" style={{ textDecoration: "none" }}>
+        <Link to="Home" style={{ textDecoration: "none" }}>
           <span className="Bag">Bags</span>
         </Link>
       </h2>
-      <hr />
     </div>
   );
 }

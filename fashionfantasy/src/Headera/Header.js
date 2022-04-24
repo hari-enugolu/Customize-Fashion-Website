@@ -1,8 +1,8 @@
 import React from "react";
 import "./Header.css";
-// import SearchIcon from "@mui/icons-material/Search";
 import { Link } from "react-router-dom";
-export default function Header(props) {
+
+export default function Header() {
   return (
     <div className="header">
       <Link to="/" style={{ textDecoration: "none" }}>
@@ -13,25 +13,9 @@ export default function Header(props) {
         />
       </Link>
 
-      <div className="header_search">
-        <input
-          className="header_searchInput"
-          type="text"
-          placeholder="search"
-        />
-        {/* <SearchIcon className="header_searchIcon" /> */}
-      </div>
-
       <Link to="Cart" style={{ textDecoration: "none" }}>
         <div className="header_option">
-          <span className="header_optionLineOne">
-            Cart{" "}
-            {props.countCartItems ? (
-              <button className="badge">{props.countCartItems}</button>
-            ) : (
-              ""
-            )}{" "}
-          </span>
+          <span className="header_optionLineOne">Cart </span>
         </div>
       </Link>
 
