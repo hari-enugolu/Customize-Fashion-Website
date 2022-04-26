@@ -5,6 +5,8 @@ import { useParams } from "react-router-dom"; //to capture the id from url
 import moment from "moment"; //to show date
 import "./SingleBag.css";
 import { getBag } from "../../redux/features/bagSlice";
+import TextEditor from "./TextEditor";
+
 const SingleBag = () => {
   const dispatch = useDispatch();
   const { bag } = useSelector((state) => ({ ...state.bag }));
@@ -59,9 +61,11 @@ const SingleBag = () => {
             {/* <DetailsThumb images={item.src} tab={this.handleTab} myRef={this.myRef} /> */}
             <button className="cart">Add to cart</button>
           </div>
+          <TextEditor />
         </div>
       </div>
     </div>
   );
 };
+
 export default SingleBag;
