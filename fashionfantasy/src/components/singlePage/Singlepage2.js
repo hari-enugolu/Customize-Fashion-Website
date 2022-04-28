@@ -5,7 +5,7 @@ import { OrbitControls, useGLTF } from "@react-three/drei";
 
 function Model({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/myshoe.glb");
+  const { nodes } = useGLTF("/myshoe.glb");
   return (
     <group ref={group} {...props} dispose={null} scale={3}>
       <mesh
@@ -26,7 +26,7 @@ function Model({ ...props }) {
       <mesh
         geometry={nodes.mesh_0_3.geometry}
         material={nodes.mesh_0_3.material}
-        // material-color="#fff000"
+        material-color="#fff000"
       />
       <mesh
         geometry={nodes.mesh_0_4.geometry}
