@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom"; //to capture the id from url
 import moment from "moment"; //to show date
 import { getShoe } from "../../redux/features/shoeSlice";
+import Singlepage from "./Singlepage";
 const SingleShoe = () => {
   const dispatch = useDispatch();
   const { shoe } = useSelector((state) => ({ ...state.shoe }));
@@ -45,6 +46,7 @@ const SingleShoe = () => {
             {shoe.Price}
           </MDBCardText>
         </div>
+        <Singlepage />
       </div>
     </>
   );
