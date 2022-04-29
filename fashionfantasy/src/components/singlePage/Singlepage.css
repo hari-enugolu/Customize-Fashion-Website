@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c9f1f5;
+    color:rgb(210, 219, 226);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card {
+    height: 100vh;
+    border-radius: 13px;
+    box-shadow: 20px 40px 33px rgba(0,0,0,0.3);
+    padding: 2rem;
+    width: 80vw;
+    background-color:  #7f0ba9;
+
+}
+
+.product-canvas {
+    width: 73vw;
+    height: 60vh;
+    background:rgb(214, 139, 139);
+    box-shadow:  10px 15px 15px 6px #717c82;
+    border-radius: 0px;
+    margin-bottom:20px
+ 
+}
+
+.colors {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+ 
+}
+
+.colors div {padding:8px;}
+
+h2 {
+    color: rgb(203, 26, 26);
+}
+
+label {
+    color: black;
+}
